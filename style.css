@@ -1,0 +1,448 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: "para-font"; */
+    /* font-family: "Montserrat", sans-serif;
+    font-weight: 500; */
+}
+
+
+
+@font-face {
+    font-family: "font";
+    src: url(./RusillaSerif-2OZpl.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "para-font";
+    src: url(./BrielleRegular-K7qMo.otf);
+    word-spacing: 6rem;
+}
+
+.pt {
+    padding: 100px 0px;
+}
+
+h1 {
+    font-family: "font";
+    font-size: clamp(40px, 10vw, 110px);
+}
+
+
+
+
+
+/* --------------Navigation Bar-------------- */
+
+
+.nav-box {
+    justify-content: space-between;
+}
+
+.nav1 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-box1 {
+    display: flex;
+    margin: 0px;
+}
+
+.ul-box2 {
+    display: flex;
+    margin: 0px;
+}
+
+a {
+    font-family: "EB Garamond", serif;
+    /* font-size: clamp(12px, 10vw, 20px); */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 30px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.homes {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.homes::before {
+    content: "Home";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+
+}
+
+.text {
+    transition: all 0.5s ease;
+}
+
+.homes:hover .text {
+    transform: translateY(-100%);
+}
+
+.homes:hover::before {
+    transform: translateY(-100%);
+}
+
+.abouts {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.abouts::before {
+    content: "About Us";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+
+}
+
+.text {
+    transition: all 0.5s ease;
+}
+
+.abouts:hover .text {
+    transform: translateY(-100%);
+}
+
+.abouts:hover::before {
+    transform: translateY(-100%);
+}
+
+.menus {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.menus::before {
+    content: "Menu";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+
+}
+
+.text {
+    transition: all 0.5s ease;
+}
+
+.menus:hover .text {
+    transform: translateY(-100%);
+}
+
+.menus:hover::before {
+    transform: translateY(-100%);
+}
+
+.contacts {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacts::before {
+    content: "Contact";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+
+}
+
+.text {
+    transition: all 0.5s ease;
+}
+
+.contacts:hover .text {
+    transform: translateY(-100%);
+}
+
+.contacts:hover::before {
+    transform: translateY(-100%);
+}
+
+
+.nav3 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.offcanvas-opentext {
+    width: 20px;
+}
+
+.nav3:hover {
+    .offcanvas-opentext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition-duration: 1s;
+    }
+
+    .top {
+        width: 20%;
+        transition: all 0.5s;
+    }
+
+    .middle {
+        width: 20%;
+        transition: all 0.5s;
+    }
+
+    .bottom {
+        width: 20%;
+        transition: all 0.5s;
+    }
+
+    .offcanvas-opentext .line1 {
+        width: 100%;
+    }
+
+    .offcanvas-opentext .line2 {
+        width: 100%;
+    }
+
+    .offcanvas-opentext .line3 {
+        width: 100%;
+    }
+}
+
+.offcanvas-opentext .top {
+    transition: all 0.5s;
+}
+
+.offcanvas-opentext .line1 {
+    background-color: #000000;
+    width: 50%;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.offcanvas-opentext .line2 {
+    background-color: #000000;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.5s;
+}
+
+.offcanvas-opentext .bottom {
+    display: flex;
+    justify-content: right;
+    transition: all 0.5s;
+}
+
+.offcanvas-opentext .line3 {
+    background-color: #000000;
+    width: 50%;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.menubar {
+    margin: 0px 0px 0px 10px;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menubar::before {
+    content: "Open";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+}
+
+.text1 {
+    transition: all 0.5s ease;
+}
+
+.nav3:hover {
+    .text1 {
+        transform: translateY(-100%);
+    }
+
+    ::before {
+        transform: translateY(-100%);
+    }
+}
+
+/* ----------Hero Section------------ */
+
+.hero-mainbox {
+    padding: 60px 0px 0px 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header-text {
+    position: relative;
+    z-index: 1000;
+}
+
+.header-video {
+    margin-top: 300px;
+    /* height: 100vh; */
+}
+
+.header-video video {
+    object-fit: cover;
+}
+
+
+/* Offcanvas */
+
+.offcanvas-mainbox {
+    position: fixed;
+    right: 0;
+    background-color: red;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+}
+
+.canvas-innertop {
+    display: flex;
+}
+
+.close-box {
+    display: flex;
+    position: fixed;
+    right: 85px;
+    top: 37px;
+
+}
+
+.close-text {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.close-text::before {
+    content: "Close";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease;
+
+}
+
+.text2 {
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.close-text:hover .text2 {
+    transform: translateY(-100%);
+}
+
+.close-text:hover::before {
+    transform: translateY(-100%);
+}
+
+.innercanvas-main {
+    position: absolute;
+    top: 60px;
+}
+
+
+/*------- About ---------*/
+
+h2 {
+    font-family: "font";
+    font-size: clamp(40px, 10vw, 100px);
+}
+
+.aboutsec-main {
+    overflow: hidden;
+    /* background-color: lightyellow; */
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.aboutbox1 {
+    display: flex;
+    align-items: end;
+}
+
+.about-heading1 {
+    margin-left: 30px;
+    margin-bottom: 300px;
+}
+
+.aboutbox2 {
+    margin-top: 10%;
+    z-index: -1;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutbox3 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.about-para1 {
+    margin-bottom: 100px;
+}
+
+p {
+    font-family: "EB Garamond", serif;
+    font-size: clamp(12px, 10vw, 20px);
+    font-weight: 500;
+}
